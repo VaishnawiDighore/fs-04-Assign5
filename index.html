@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        *{
+            margin-top: 15px;
+        }
+
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        function Header(){
+
+        return <div style={{backgroundColor:"red",height:"70px",color:"white",display:"flex"}}>  
+            <div style={{width:"50%",display:"flex",justifyContent:"left",alignItems:"center",paddingLeft:"20px"}}> 
+                 <h2>Koding Made Simple</h2>
+                </div>
+            <div style={{width:"50%",display:"flex",justifyContent:"center",alignItems:"center",paddingBottom:"20px"}}> 
+                 <a href="#" style={{color:"white",marginRight:"50px",textDecoration:"none"}}>Bootstrap</a>
+                 <a href="#" style={{color:"white",marginRight:"50px",textDecoration:"none"}}>Themes</a>
+                 <a href="#" style={{color:"white",marginRight:"50px",textDecoration:"none"}}>Blog</a>
+                </div>
+            </div>
+
+
+
+        }
+
+        function Main(){
+            return <div style={{height:"300px",backgroundColor:"#ffe6e6"}}>
+                         <div style={{display:"flex",height:"300px",padding:"30px",  flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
+                            <h1 style={{margin:"12px 0px"}}>Customize Bootstrap Navbar</h1>
+                            <p style={{margin:"12px 0px"}}>Easy way to change navbar background, text and hover link color in bootstrap...</p>
+                            </div>
+                </div>
+        }
+
+          function App(){
+             return <div style={{height:"500px"}}> 
+              
+                <Header /> 
+                 <Main />
+
+                </div>
+          }
+        
+        ReactDOM.render(<App />,document.getElementById('root'))
+        
+        
+        </script>
+</body>
+</html>
